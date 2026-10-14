@@ -1,0 +1,881 @@
+/* =========================================
+   AUREA TRAVEL
+   GENERAL SETTINGS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-blue: #10283E;
+    --navy: #173653;
+    --gold: #B28A52;
+    --white: #FFFFFF;
+    --light-grey: #F7F9FB;
+    --text-grey: #718096;
+    --border-grey: #E0E6EC;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--white);
+    color: #263746;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+section {
+    scroll-margin-top: 110px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-grey);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1200px;
+    min-height: 90px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo a {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--navy);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-link {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--navy);
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--gold);
+}
+
+
+/* =========================================
+   SMALL GOLD TITLES
+========================================= */
+
+.small-title {
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   HOME SECTION
+========================================= */
+
+.home-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.home-text h1 {
+    font-family: Georgia, serif;
+    font-size: 55px;
+    font-weight: normal;
+    line-height: 1.2;
+    color: var(--navy);
+    margin-bottom: 25px;
+}
+
+.home-text p {
+    color: var(--text-grey);
+    margin-bottom: 25px;
+}
+
+.home-image img {
+    height: 450px;
+    border-radius: 8px;
+}
+
+.main-button,
+.second-button {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 5px 5px 5px 0;
+    transition: 0.3s;
+}
+
+.main-button {
+    background-color: var(--navy);
+    color: var(--white);
+    border: 1px solid var(--navy);
+}
+
+.main-button:hover {
+    background-color: var(--dark-blue);
+}
+
+.second-button {
+    color: var(--navy);
+    border: 1px solid var(--navy);
+}
+
+.second-button:hover {
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+
+/* =========================================
+   LEFT MENU AND RIGHT CONTENT
+========================================= */
+
+.travel-layout {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 0 75px;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 35px;
+    align-items: start;
+}
+
+
+/* =========================================
+   LEFT WHITE MENU BOX
+========================================= */
+
+.side-menu {
+    background-color: var(--white);
+    border: 1px solid var(--border-grey);
+    border-radius: 8px;
+    padding: 25px 20px;
+    box-shadow: 0 8px 30px rgba(16, 40, 62, 0.06);
+    position: sticky;
+    top: 115px;
+}
+
+.side-menu-heading {
+    padding: 0 5px 20px;
+    border-bottom: 1px solid var(--border-grey);
+    margin-bottom: 10px;
+}
+
+.side-menu-heading .small-title {
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+
+.side-menu-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: normal;
+    color: var(--navy);
+}
+
+
+/* INDIVIDUAL MENU LINKS */
+
+.side-menu-item {
+    display: grid;
+    grid-template-columns: 28px 1fr 18px;
+    align-items: center;
+    gap: 8px;
+    padding: 18px 8px;
+    border-bottom: 1px solid var(--border-grey);
+    color: var(--navy);
+    transition: 0.3s;
+}
+
+.side-menu-item:hover {
+    background-color: var(--light-grey);
+    color: var(--gold);
+    padding-left: 13px;
+}
+
+.menu-number {
+    color: var(--gold);
+    font-family: Georgia, serif;
+    font-size: 12px;
+}
+
+.menu-text {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.menu-arrow {
+    font-size: 17px;
+    text-align: right;
+    color: var(--gold);
+}
+
+
+/* TEXT AT THE BOTTOM OF THE MENU */
+
+.side-menu-bottom {
+    background-color: var(--light-grey);
+    margin-top: 25px;
+    padding: 18px;
+    border-radius: 5px;
+}
+
+.side-menu-bottom p {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.side-menu-bottom span {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    color: var(--gold);
+}
+
+
+/* =========================================
+   RIGHT CONTENT HEADING
+========================================= */
+
+.travel-content {
+    min-width: 0;
+}
+
+.content-heading {
+    margin-bottom: 30px;
+}
+
+.content-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: normal;
+    line-height: 1.3;
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.content-heading p {
+    color: var(--text-grey);
+}
+
+
+/* =========================================
+   SERVICE CARDS
+========================================= */
+
+.service-card {
+    display: grid;
+    grid-template-columns: 42% 1fr;
+    gap: 0;
+    background-color: var(--white);
+    border: 1px solid var(--border-grey);
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    box-shadow: 0 10px 30px rgba(16, 40, 62, 0.08);
+    transform: translateY(-3px);
+}
+
+.service-card img {
+    height: 100%;
+    min-height: 260px;
+}
+
+.service-card-content {
+    padding: 25px;
+    align-self: center;
+}
+
+.service-card-content .small-title {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.service-card-content h3 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.service-card-content p {
+    font-size: 13px;
+    color: var(--text-grey);
+    margin-bottom: 18px;
+}
+
+.service-button {
+    display: inline-block;
+    color: var(--navy);
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+
+.service-button:hover {
+    color: var(--gold);
+}
+
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.section-heading {
+    width: 90%;
+    max-width: 750px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: var(--navy);
+    margin-bottom: 15px;
+}
+
+.section-heading p {
+    color: var(--text-grey);
+}
+
+
+/* =========================================
+   DESTINATION SECTION
+========================================= */
+
+.destinations-section {
+    padding: 75px 0;
+    background-color: var(--light-grey);
+}
+
+.destination-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.destination-card {
+    background-color: var(--white);
+    border: 1px solid var(--border-grey);
+    border-radius: 7px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(16, 40, 62, 0.1);
+}
+
+.destination-card img {
+    height: 240px;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: var(--text-grey);
+    margin-bottom: 20px;
+}
+
+.card-button {
+    display: inline-block;
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 12px 18px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card-button:hover {
+    background-color: var(--dark-blue);
+}
+
+
+/* =========================================
+   TRAVEL INQUIRY SECTION
+========================================= */
+
+.inquiry-section {
+    padding: 75px 0;
+    background-color: var(--light-grey);
+}
+
+.inquiry-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.inquiry-information {
+    padding-top: 30px;
+}
+
+.inquiry-information h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: normal;
+    color: var(--navy);
+    margin-bottom: 20px;
+}
+
+.inquiry-information p {
+    color: var(--text-grey);
+    margin-bottom: 20px;
+}
+
+.contact-detail {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-grey);
+}
+
+.contact-detail h3 {
+    color: var(--navy);
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   FORM DESIGN
+========================================= */
+
+.form-container {
+    background-color: var(--white);
+    border: 1px solid var(--border-grey);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(16, 40, 62, 0.05);
+}
+
+.form-container h2 {
+    font-family: Georgia, serif;
+    color: var(--navy);
+    font-size: 27px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+form label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--navy);
+    margin-bottom: 7px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-grey);
+    border-radius: 4px;
+    background-color: var(--white);
+    color: var(--navy);
+    margin-bottom: 18px;
+    outline: none;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: var(--gold);
+}
+
+form textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--navy);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    background-color: var(--dark-blue);
+}
+
+#formMessage {
+    color: #246846;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   BLOG SECTION
+========================================= */
+
+.blog-section {
+    padding: 75px 0;
+    background-color: var(--white);
+}
+
+.blog-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.blog-card {
+    border: 1px solid var(--border-grey);
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: var(--white);
+    transition: 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(16, 40, 62, 0.08);
+}
+
+.blog-card img {
+    height: 230px;
+}
+
+.blog-content {
+    padding: 25px;
+}
+
+.blog-category {
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.blog-content h3 {
+    color: var(--navy);
+    font-family: Georgia, serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.blog-content p {
+    color: var(--text-grey);
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.blog-content a {
+    color: var(--navy);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.blog-content a:hover {
+    color: var(--gold);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding-top: 50px;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1.3fr;
+    gap: 40px;
+}
+
+.footer-about h2 {
+    font-family: Georgia, serif;
+    letter-spacing: 2px;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer-about p {
+    color: #C0CCD7;
+    font-size: 13px;
+    max-width: 300px;
+}
+
+footer h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-navigation a {
+    color: #C0CCD7;
+    font-size: 13px;
+}
+
+.footer-navigation a:hover {
+    color: var(--gold);
+}
+
+.footer-contact p {
+    color: #C0CCD7;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #33495D;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-bottom p {
+    color: #C0CCD7;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   TABLET SCREEN
+========================================= */
+
+@media (max-width: 900px) {
+
+    .header-container {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home-section {
+        grid-template-columns: 1fr;
+    }
+
+    .home-text h1 {
+        font-size: 45px;
+    }
+
+    .travel-layout {
+        grid-template-columns: 230px 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card img {
+        height: 230px;
+        min-height: 0;
+    }
+
+    .destination-container,
+    .blog-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .inquiry-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE SCREEN
+========================================= */
+
+@media (max-width: 600px) {
+
+    .header-container {
+        width: 92%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .home-section {
+        width: 90%;
+        padding: 45px 0;
+    }
+
+    .home-text h1 {
+        font-size: 38px;
+    }
+
+    .home-image img {
+        height: 280px;
+    }
+
+    .travel-layout {
+        width: 90%;
+        grid-template-columns: 1fr;
+        padding-top: 20px;
+    }
+
+    .side-menu {
+        position: static;
+        padding: 20px;
+    }
+
+    .side-menu-heading h2 {
+        font-size: 22px;
+    }
+
+    .content-heading h2 {
+        font-size: 29px;
+    }
+
+    .service-card-content {
+        padding: 20px;
+    }
+
+    .service-card-content h3 {
+        font-size: 23px;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+    }
+
+    .destination-container,
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .main-button,
+    .second-button {
+        display: block;
+        text-align: center;
+    }
+
+}
